@@ -113,6 +113,41 @@ header h1 {
     display: none;
 }
 
+/* NAV TABS */
+/* NAV TABS */
+.nav-tabs {
+    display: flex;
+    gap: 15px;
+    background: white; /* jadi putih */
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    margin-left: 250px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* SEMUA BUTTON SAMA */
+.nav-tabs a {
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #3AAFA9, #2A7D78);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-tabs a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+
+/* SCROLL SMOOTH */
+html {
+    scroll-behavior: smooth;
+}
 /* RESPONSIVE (HP) */
 @media (max-width: 768px) {
 
@@ -132,4 +167,10 @@ header h1 {
         margin-left: 0;
         padding: 25px;
     }
+    @media (max-width: 768px) {
+    .nav-tabs {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+}
 }
